@@ -3,8 +3,23 @@ package com.honeymukesh;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
+// make sure to add the following import statement at the top of this file below your package statement
+// see - `https://reactnavigation.org/docs/getting-started/`
+import android.os.Bundle;
 
 public class MainActivity extends ReactActivity {
+
+
+  /**
+   * See- `https://reactnavigation.org/docs/getting-started/`
+   * `react-native-screens` package requires one additional configuration step to properly work on Android devices.
+   * Edit MainActivity.java file which is located in android/app/src/main/java/<your package name>/MainActivity.java.
+   * Add the following code to the body of MainActivity class:
+   */
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
+  }
 
   /**
    * Returns the name of the main component registered from JavaScript. This is used to schedule
