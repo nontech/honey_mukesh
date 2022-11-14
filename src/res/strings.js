@@ -19,6 +19,10 @@ const strings = {
     prevBtn: c.previous,
     nxtBtn: c.next,
   },
+  quiz: {
+    heading: 'Was zeichnet unsere Produkte aus?',
+    modalText: 'Richtig! Du kannst das Training nun fortsetzten.',
+  },
 };
 
 export default strings;

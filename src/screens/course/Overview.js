@@ -10,7 +10,7 @@ const Overview = ({navigation}) => {
       <Text style={styles.heading}>{strings.overview.heading}</Text>
       <Image source={require('./images/product.png')} />
       <Text style={styles.text}>{strings.overview.text}</Text>
-      <View style={styles.buttonConatiner}>
+      <View style={styles.buttonContainer}>
         <Button
           title="Home"
           onPress={() => navigation.navigate('home')}
@@ -30,17 +30,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#2E80F3',
   },
   buttonContainer: {
-    flex: 1,
+    display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    width: '100%',
+    justifyContent: 'space-around',
   },
   heading: {
     ...palette.heading,
     ...{
-      color: colors.title.white,
+      color: colors.title.black,
       marginTop: 72,
       marginBottom: 30,
     },
@@ -50,13 +50,6 @@ const styles = StyleSheet.create({
     ...{
       margin: 30,
       textAlign: 'left',
-    },
-  },
-  button: {
-    ...palette.button,
-    ...{
-      backgroundColor: '#68a0cf',
-      borderRadius: 10,
     },
   },
 });
